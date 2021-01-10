@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "xtitolo";
+    font-family: "xdoc";
     src: url("./font/FascinateInline-Regular.ttf") format("truetype");
 }
 
@@ -16,18 +16,36 @@ body {
     background: linear-gradient(to top, #000000, #434343);
 }
 
-h1 {
-    color: #669900;
-    font-size: 50px;
-    font-family: xtitolo;
-    letter-spacing: 10px;
-}
-
 footer {
     margin: 25px;
     font-size: 15px;
-    font-family: xtitolo;
+    font-family: xdoc;
     color: #FFFFFF;
+}
+
+.modal-content {
+    text-align: center;
+    font-family: xdoc;
+    font-size: 50px;
+    color: #ED213A;
+    border: 1px solid #ED213A !important;
+    background: #000000 !important;
+    background: -webkit-linear-gradient(to top, #000000, #434343) !important;
+    background: linear-gradient(to top, #000000, #434343) !important;
+}
+
+.modal-footer {
+    border-top: 1px solid #ED213A !important;
+}
+
+.modal-footer button {
+    background-color: #ED213A !important;
+    border: none;
+}
+
+.modal-footer button:hover {
+    background-color: #669900 !important;
+    border: none;
 }
 
 #game-board {
@@ -40,6 +58,13 @@ footer {
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
+}
+
+.title {
+    color: #669900;
+    font-size: 25px;
+    font-family: xdoc;
+    letter-spacing: 10px;
 }
 
 .snake {

@@ -7,10 +7,17 @@ let gameOver = false;
 const gameBoard = document.getElementById("game-board");
 
 function main(currentTime) {
+    function restartGame() {
+        window.location = "./";
+    }
+    
+    function finishGame() {
+        return
+    }
+    window.restartGame = restartGame;
+    window.finishGame = finishGame;
     if (gameOver) {
-        if (confirm("YOU LOST!")) {
-            window.location = "/";
-        }
+        $("#gameOverModal").modal();
         return;
     }
     window.requestAnimationFrame(main);
