@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "xtitolo";
+    src: url("./font/FascinateInline-Regular.ttf") format("truetype");
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #000000;
+    background: -webkit-linear-gradient(to top, #000000, #434343);
+    background: linear-gradient(to top, #000000, #434343);
+}
+
+h1 {
+    color: #669900;
+    font-size: 50px;
+    font-family: xtitolo;
+    letter-spacing: 10px;
+}
+
+footer {
+    margin: 25px;
+    font-size: 15px;
+    font-family: xtitolo;
+    color: #FFFFFF;
+}
+
+#game-board {
+    background: #009933;
+    background: -webkit-linear-gradient(to bottom, #009933, #004D1A);
+    background: linear-gradient(to bottom, #009933, #004D1A);
+    border: .25vmin solid #669900;
+    min-width: 75vmin;
+    min-height: 75vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+    background-color: #669900;
+    border: .25vmin solid #446600;
+}
+
+.fruit {
+    background: #ED213A;
+    background: -webkit-linear-gradient(to top, #93291E, #ED213A);
+    background: linear-gradient(to top, #93291E, #ED213A);
+    border: .25vmin solid  #93291E;
+    border-radius: 50%;
+}
